@@ -19,11 +19,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Create Credentials File
+      - name: Create Google Credentials
         run: |
           echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
 
-      - name: Build Project
+      - name: Build
         run: mvn clean package -DskipTests
 
       - name: Run Scraper
