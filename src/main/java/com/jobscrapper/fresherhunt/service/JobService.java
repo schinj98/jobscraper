@@ -5,6 +5,7 @@ import com.jobscrapper.fresherhunt.scraper.JobDetailsScraper;
 import com.jobscrapper.fresherhunt.scraper.SitemapScraper;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -38,7 +39,7 @@ public class JobService {
                 new ArrayList<>();
 
         LocalDate targetDate =
-                LocalDate.now().minusDays(1);
+                LocalDate.now(ZoneId.of("Asia/Kolkata")).minusDays(1);
 
         for(String url : urls) {
             if(existingUrls.contains(url)) {
