@@ -45,7 +45,19 @@ public class JobDetailsScraper {
             System.out.println(
                     "Post Date = " + postDate
             );
+            System.out.println(
+                    "Target Date = " + targetDate
+            );
+
+            System.out.println(
+                    "Is Before = "
+                            + postDate.isBefore(targetDate)
+            );
+
             if(postDate.isBefore(targetDate)) {
+                System.out.println(
+                        "Returning NULL"
+                );
                 return null;
             }
 
