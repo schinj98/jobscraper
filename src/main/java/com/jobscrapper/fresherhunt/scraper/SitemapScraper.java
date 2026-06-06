@@ -17,7 +17,7 @@ public class SitemapScraper {
         Set<String> uniqueUrls =
                 new LinkedHashSet<>();
 
-        for(int page = 1; page <= 20; page++) {
+        for(int page = 1; page <= 5; page++) {
 
             String pageUrl;
 
