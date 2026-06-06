@@ -20,7 +20,7 @@ public class GoogleSheetService {
             "FreshersHunt Scraper";
 
     private static final String SPREADSHEET_ID =
-            "1W2YQS2MezMaKpZuq0ti4plq5DUs5gy7-HiuRZZaYoUs";
+            "1N2vbwDXYhC75SzaAxtGOB0bDV2baeJBG0EsPtWa3Kt8";
 
     private static final String RANGE =
             "Sheet1!A:E";
