@@ -39,7 +39,7 @@ public class JobService {
                 new ArrayList<>();
 
         LocalDate targetDate =
-                LocalDate.now(ZoneId.of("Asia/Kolkata")).minusDays(1);
+                LocalDate.now(ZoneId.of("Asia/Kolkata"));
 
         for(String url : urls) {
             if(existingUrls.contains(url)) {
